@@ -1,0 +1,55 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:paddingTop="@dimen/activity_vertical_margin"
+                android:paddingBottom="@dimen/activity_vertical_margin"
+                tools:context=".AiguestActivity">
+    <RelativeLayout
+            android:id="@+id/operation_row"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true" android:layout_alignParentStart="true">
+        <EditText
+                android:id="@+id/nameText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="0dp"
+                android:singleLine="true"
+                android:hint="@string/account"
+                />
+        <EditText
+                android:id="@+id/pwdText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+                android:layout_toRightOf="@+id/nameText"
+                android:hint="@string/password"
+                />
+        <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/connect"
+                android:id="@+id/button"
+                android:layout_toRightOf="@+id/pwdText"
+                />
+    </RelativeLayout>
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/user_tip"
+            android:id="@+id/textView2"
+            android:layout_below="@+id/operation_row"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"/>
+
+    <RelativeLayout
+            android:id="@+id/ad_row"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView2"
+            />
+
+</RelativeLayout>
